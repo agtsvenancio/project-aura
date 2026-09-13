@@ -12,14 +12,16 @@ import { Button } from "@/components/ui/button";
 import { specialties } from "@/data/specialties";
 
 export const Route = createFileRoute("/")({
-  head: () => ({ meta: [
-    { title: "Como o Sol | Especialidades de cuidado" },
-    { name: "description", content: "Explore 21 especialidades e encontre informações responsáveis sobre saúde, cuidado e bem-estar." },
-    { property: "og:title", content: "Como o Sol | Especialidades de cuidado" },
-    { property: "og:description", content: "Um lugar claro para escolher quem cuida de você." },
-    { property: "og:type", content: "website" },
-    { name: "twitter:card", content: "summary_large_image" },
-  ] },),
+  head: () => ({
+    meta: [
+      { title: "Como o Sol | Especialidades de cuidado" },
+      { name: "description", content: "Explore 21 especialidades e encontre informações responsáveis sobre saúde, cuidado e bem-estar." },
+      { property: "og:title", content: "Como o Sol | Especialidades de cuidado" },
+      { property: "og:description", content: "Um lugar claro para escolher quem cuida de você." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
